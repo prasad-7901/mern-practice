@@ -1,0 +1,93 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.resume {
+    margin: 10px auto;
+    width: 900px;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #cecece;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-header {
+    background-color: #3144a9;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.des-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.des {
+    border-right: 1px solid #ffffff63;
+    padding: 0px 10px;
+}
+
+.des:last-child {
+    border: none;
+}
+
+
+.nav-link {
+    color: white;
+    font-weight: normal;
+}
+
+.nav-link:hover {
+    color: #ffeb3b;
+}
+
+.resume-body {
+    padding: 10px;
+    font-weight: 500;
+    flex: 1;
+    overflow: auto;
+}
+
+.sub-heading {
+    color: #3144a9;
+    margin-bottom: 4px;
+}
+
+.content {
+    font-weight: 400;
+    color: #3e3f40;
+    line-height: 23px;
+    font-size: 13px;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 16px;
+}
+
+.resume-section {
+    margin-bottom: 16px;
+}

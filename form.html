@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 16px;
+            overflow: hidden;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #cecece;
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            border-color: rgb(0, 94, 218);
+        }
+
+
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 24px;
+        }
+
+        form {
+            border: 1px solid #cecece;
+            padding: 16px;
+            border-radius: 10px;
+            width: 650px;
+            margin: auto;
+            height: 100%;
+            overflow: auto;
+
+        }
+
+        .mb-2 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 16px 20px;
+            width: 100%;
+            border: 0px;
+            border-radius: 8px;
+            background-color: blueviolet;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+
+         .btn a{
+            color:white;
+            text-decoration: none;
+         }
+
+        .btn:hover {
+            background-color: rgb(95, 14, 170);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get">
+
+        <h2 class="mb-2">Form</h2>
+
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="textbox" id="name">
+        </div>
+
+        <div class="field">
+            <label for="name">Email:</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="field">
+            <label for="mb">Mobile Number:</label>
+            <input type="tel" id="mb">
+        </div>
+
+        <div class="field">
+            <label for="name">Gender:</label>
+            <div style="display: flex; gap:6px; align-items: center; ">
+
+                <input type="radio" name="Gender" id="male">
+                <label for="male">Male</label>
+
+
+                <input type="radio" name="Gender" id="female">
+                <label for="female">Female</label>
+
+
+                <input type="radio" name="Gender" id="other">
+                <label for="other">Other</label>
+
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="select">Course</label>
+            <select placeholder="Select Course" id="select">
+                <option value="cs1">UI/Ux Designing</option>
+                <option value="cs2">Mern Full Stack Developer</option>
+                <option value="cs3">Frontend Developer</option>
+                <option value="cs4">Backend Developer</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="name">Address:</label>
+            <textarea rows="3"></textarea>
+        </div>
+
+        <div>
+            <button class="btn">
+                <a href="/table.html">Submit</a>
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>

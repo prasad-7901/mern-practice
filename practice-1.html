@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <style>
+        * {
+            padding: 0px;
+            /* margin: 0px; */
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section {
+            border: 1px solid #cecece;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .mb-2 {
+            margin-bottom: 12px;
+        }
+
+        .mb-5 {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin-left: 0px;
+            padding-left: 16px;
+            list-style: disc;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        ol {
+            margin-left: 0px;
+            padding-left: 16px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 16px 20px;
+            width: 100%;
+            border: 0px;
+            border-radius: 8px;
+            background-color: blueviolet;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mb-5">
+        <h2 class="mb-2">image and lists concepts</h2>
+        <div class="section mb-2">
+            <div style="display: flex; gap:16px;">
+                <div>
+                    <img src="./assets/imags/my-image.png" height="300px" style="border-radius:8px;">
+                </div>
+
+                <div style="display: flex; gap:32px; flex:1;">
+                    <div class="mb-2">
+                        <h3 class="mb-2">Un order list</h3>
+                        <ul>
+                            <li>List 1</li>
+                            <li>List 2</li>
+                            <li>List 3</li>
+                            <li>List 4</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2">Order List</h3>
+                        <ol type="">
+                            <li>List 1</li>
+                            <li>List 2</li>
+                            <li>List 3</li>
+                            <li>List 4</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2">Data Defintion List</h3>
+
+                        <dl>
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <h3 class="mb-2">Audio and video</h3>
+        <div class="section">
+            <div class="mb-2">
+                <audio controls>
+                    <source src="./assets/audio/john_cena_ringtone.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div style="width: 300px; height: 200px;">
+                <!-- loop autoplay muted width -->
+                <video controls height="100%" width="100%" poster="assets/imags/Msd wallpapers 07.png">
+                    <source src="./assets/video/yashreddy358_ssspin.io_1793723286.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button class="btn">
+            <a href="/form.html">Back</a>
+        </button>
+    </div>
+</body>
+
+</html>

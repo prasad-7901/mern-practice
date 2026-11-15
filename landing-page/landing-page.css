@@ -1,0 +1,173 @@
+* {
+    /* padding: 0px;
+    margin: 0px; */
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #131635;
+    font-size: 16px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav-bar {
+    border: 1px solid #ffffff5c;
+    color: white;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(199px);
+    width: 1260px;
+    border-radius: 170px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+
+.nav-left img {
+    height: 35px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-link li a {
+    padding: 8px 20px;
+    border-radius: 24px;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.nav-link li a:hover {
+    background: rgb(255 255 255 / 11%);
+    border: 1px solid #ffffff5c;
+    backdrop-filter: blur(12px);
+}
+
+
+
+.primary-gradient-text {
+    background: linear-gradient(45deg, #0670eb, #8b3de8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.btn {
+    padding: 6px 16px;
+    border-color:transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #0670eb, #8b3de8);
+    color: white;
+}
+
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #3b97ff, #b171ff);
+    border-color: white;
+}
+.btn-primary:active {
+    background: linear-gradient(90deg, #0256b6, #6522b8);
+    outline-width: 1px;
+    outline-style: double;
+    outline-color: #fff;
+}
+
+
+.main-content {
+    flex: 1;
+    overflow: auto;
+}
+
+.landing-page {
+    background-color: #131635;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 60px 60px 60px;
+    background-image: url(../assets/imags/bh-infographics.png);
+    border-bottom: 1px solid #ffffff5c;
+}
+
+.land-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+}
+
+.land-left h1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.land-right img {
+    height: 480px;
+}
+
+.section {
+    padding: 60px 60px;
+}
+
+
+.headings-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.headings-block label {
+    font-size: 18px;
+}
+
+.headings-block h2 {
+    font-size: 30px;
+}
+
+.card {
+    border: 1px solid #cecece;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.product-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-card-details {}
