@@ -21,7 +21,7 @@ body {
     overflow: hidden;
 }
 
-.nav-bar {
+.navbar {
     border: 1px solid #ffffff5c;
     color: white;
     padding: 12px 40px;
@@ -35,8 +35,9 @@ body {
     left: 0;
     right: 0;
     top: 30px;
-    margin: auto;
+    margin: auto 30px;
     z-index: 999;
+    background-color: transparent !important;
 }
 
 .nav-left img {
@@ -44,22 +45,28 @@ body {
 }
 
 .nav-link {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 8px 16px !important;
+    border-radius: 16px;
+    color: white;
+    border: 1px solid transparent;
 }
 
-.nav-link li a {
-    padding: 8px 20px;
-    border-radius: 24px;
-    display: inline-block;
-    border: 1px solid transparent;
-    cursor: pointer;
+.nav-link:focus,
+.nav-link:hover {
+    color: #ffffff;
+    background: #ffffff24;
+
 }
+
+.navbar-nav .nav-link.active {
+    color: #fd6501;
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: #ffffff;
+    background: #ffffff24;
+}
+
 
 .nav-link li a:hover {
     background: rgb(255 255 255 / 11%);
@@ -67,10 +74,12 @@ body {
     backdrop-filter: blur(12px);
 }
 
-
+.navbar-toggler {
+    background-color: white;
+}
 
 .primary-gradient-text {
-    background: linear-gradient(45deg, #0670eb, #8b3de8);
+    background: linear-gradient(45deg, #fd6501, #ffa92b);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -78,21 +87,23 @@ body {
 
 .btn {
     padding: 6px 16px;
-    border-color:transparent;
+    /* border-color:transparent; */
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, #0670eb, #8b3de8);
+    background: #fd6501;
     color: white;
+    border-color: transparent;
 }
 
 
 .btn-primary:hover {
-    background: linear-gradient(45deg, #3b97ff, #b171ff);
+    background: #ff8d40;
     border-color: white;
 }
+
 .btn-primary:active {
-    background: linear-gradient(90deg, #0256b6, #6522b8);
+    background: #ce5707;
     outline-width: 1px;
     outline-style: double;
     outline-color: #fff;
@@ -146,23 +157,8 @@ body {
     margin-bottom: 30px;
 }
 
-.headings-block label {
-    font-size: 18px;
-}
 
-.headings-block h2 {
-    font-size: 30px;
-}
 
-.card {
-    border: 1px solid #cecece;
-    border-radius: 12px;
-    background: #fff;
-}
-
-.card-body {
-    padding: 16px;
-}
 
 .product-card img {
     height: 100%;
@@ -171,4 +167,10 @@ body {
     border-radius: 12px;
 }
 
-.product-card-details {}
+
+@media screen and (max-width:1366px) {
+    .navbar {
+        width: auto !important;
+        border-radius: 36px;
+    }
+}
