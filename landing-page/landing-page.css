@@ -24,7 +24,7 @@ body {
 .navbar {
     border: 1px solid #ffffff5c;
     color: white;
-    padding: 12px 40px;
+    padding: 12px 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,8 +86,9 @@ body {
 }
 
 .btn {
-    padding: 6px 16px;
+    padding: 8px 24px;
     /* border-color:transparent; */
+    font-weight: 600;
 }
 
 .btn-primary {
