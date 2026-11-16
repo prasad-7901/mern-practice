@@ -83,6 +83,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-weight: 600;
 }
 
 .btn {
@@ -140,7 +141,7 @@ body {
 }
 
 .land-right img {
-    height: 480px;
+    height: 450px;
 }
 
 .section {
